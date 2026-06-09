@@ -1,10 +1,8 @@
 import { resolve } from "path";
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
  
 export default defineConfig({
-
     root: "src",
-
     build: {
     emptyOutDir: true,
     assetsInlineLimit: 0,
@@ -16,8 +14,5 @@ export default defineConfig({
     },
     outDir: "../build",
   },
-
-  base: '/',
-
+  base: '/portfolio-a/',
 });
- 
