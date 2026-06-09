@@ -17,7 +17,7 @@ export default defineConfig({
     outDir: "../build",
   },
 
-  base: '/portfolio/',
+  base: '/',
 
 });
  
