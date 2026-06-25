@@ -5,56 +5,116 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio-a</title>
-    
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
   </head>
+
   <body>
+     
   
   <nav class="nav">
     <div class="all-nav">
-      <div class="logo">Portfolio</div>
+      
 
       <ul class="links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projectOne.html">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
+
+      <div class="logo">Portfolio</div>
+
+      <div class="socials">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      
+      </div>
+
+    <div class="hamburger" id="hamburger">
+  <i class="fa-solid fa-bars"></i>
+</div>
+
     </div>
   </nav>
 
-  <section class="hero">
-    <div class="all-hero">
-      <h1>Greeting</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, maiores?</p>
+  <main class="snap-container">
 
-      <a class="btn" href="#">View Projects</a>
+  <div class="scroll-dots">
+  <a href="#hero" class="dot"></a>
+  <a href="#about" class="dot"></a>
+  <a href="#projects" class="dot"></a>
+  <a href="#stack" class="dot"></a>
+  <a href="#reach" class="dot"></a>
+</div>
+
+
+
+
+
+
+  <section id="hero" class="home-hero">
+    <div class="all-home-hero">
+
+      <h1>Angela's Digital Portfolio</h1>
+      <h3>Digital Designer</h3>
+      
+
+      <a class="btn" href="/portfolio-a/pages/projects.html">View Projects</a>
     </div>
   </section>
 
-  <section class="about-main">
-    <div class="all-about">
-      <h2>About me</h2><br>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </div>
-  </section>
+  <section id="about" class="about-main">
+  <div class="all-about">
 
-  <section class="projects-main">
+    <div class="about-image">
+      <img src="assets/laptop.webp" alt="About me section laptop">
+    </div>
+
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I'm a student passionate about digital design and front-end development, with a strong interest in creating thoughtful and visually compelling experiences. I enjoy turning ideas into functional, user-centered designs while continuously learning and refining my craft.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <section id="projects" class="projects-main">
     <div class="all-projects">
-      <h2>Projects</h2>
+      
 
       <div class="grid">
-        <div class="card1">Project 1</div>
-        <div class="card2">Project 2</div>
+        <div class="card1" data-page="/portfolio-a/pages/project1.html">Furniture E-commerce Website
+          
+<h3>Furniture E-commerce Website</h3>
+<span>UI/UX DESIGN</span>
+        </div>
+        <div class="card1" data-page="/portfolio-a/pages/project4.html">Movie Streaming Platform
+          <h3>Furniture E-commerce Website</h3>
+<span>UI/UX DESIGN</span>
+        </div>
+        
       </div>
     </div>
   </section>
 
 
-  <div class="tech-stack">
+  <div id="stack"  class="tech-stack">
   <h3>Tech Stack</h3>
 
   <div class="stack-grid">
     <div class="stack-card">
       <h4>Design</h4>
+      
 
       <ul>
         <li>Figma</li>
@@ -75,7 +135,9 @@
   </div>
 </div>
 
-<section class="reach-out">
+<section id="reach" class="reach-out">
+
+  
 
 
     <h2>REACH OUT</h2>
@@ -83,21 +145,29 @@
     <a href="#" class="contact-btn">Contact</a>
 
     <div class="footer-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Works</a>
+        <a href="index.html">Home</a>
+        <a href="pages/projects.html">Projects</a>
+        <a href="pages/contact.html">Contact</a>
         <a href="#">Instagram</a>
         <a href="#">LinkedIn</a>
     </div>
 
 </section>
+</main>
 
-
-  <footer class="footer">
-    <p>© 2026 yourname</p>
+<footer class="footer">
+    
+    <div class="footer-socials">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      
+      </div>
+      <p>© 2026 Angela</p>
   </footer>
 
 
     <script type="module" src="./js/main.js"></script>
+
   </body>
 </html>
